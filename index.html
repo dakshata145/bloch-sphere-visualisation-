@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloch Sphere Visualization</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>Bloch Sphere Visualization</h1>
+    <p>Interactive Quantum State Explorer</p>
+</header>
+
+<main>
+    <section class="sphere-section">
+        <div id="sphere"></div>
+    </section>
+
+    <section class="controls">
+        <h2>Qubit Controls</h2>
+
+        <label>Polar Angle (θ): <span id="thetaValue">90°</span></label>
+        <input type="range" id="theta" min="0" max="180" value="90">
+
+        <label>Azimuthal Angle (φ): <span id="phiValue">0°</span></label>
+        <input type="range" id="phi" min="0" max="360" value="0">
+
+        <h3>Quantum State</h3>
+        <p id="state"></p>
+
+        <h3>Measurement Probabilities</h3>
+        <p id="prob0"></p>
+        <p id="prob1"></p>
+
+        <button id="reset">Reset Sphere</button>
+    </section>
+</main>
+
+<footer>
+    <p>Bloch Sphere | Quantum Computing Project</p>
+</footer>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
