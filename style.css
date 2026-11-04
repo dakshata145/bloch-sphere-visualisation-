@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080f20;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #111d35;
+}
+
+header h1 {
+    color: #59d5ff;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}
+
+.sphere-section {
+    width: min(550px, 100%);
+    height: 480px;
+    background: #101b32;
+    border-radius: 15px;
+}
+
+#sphere {
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    width: 350px;
+    padding: 25px;
+    background: #15233d;
+    border-radius: 15px;
+}
+
+.controls h2,
+.controls h3 {
+    color: #59d5ff;
+    margin-bottom: 15px;
+}
+
+.controls label {
+    display: block;
+    margin-top: 20px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 15px 0;
+    accent-color: #59d5ff;
+}
+
+.controls p {
+    margin: 12px 0;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #16b8df;
+    color: #071426;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #62ddff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #9aabc5;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    .sphere-section {
+        height: 350px;
+    }
+
+    .controls {
+        width: 100%;
+    }
+}
